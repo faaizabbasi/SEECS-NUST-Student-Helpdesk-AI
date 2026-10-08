@@ -1,0 +1,29 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Generated vector index (rebuilt automatically from data/raw)
+data/vectorstore/faiss_index/
+data/vectorstore/manifest.json
+
+# Source documents (institutional handbooks/forms — not ours to
+# redistribute; supply your own in data/raw/, see README)
+data/raw/*
+!data/raw/.gitkeep
+
+# Original prototyping notebook — kept locally only
+notebooks/
+
+# Tests — kept locally only
+tests/
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
